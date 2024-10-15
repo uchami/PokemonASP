@@ -8,10 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Label ID="entrenador" runat="server" />
+        <asp:Label ID="lblEntrenador" runat="server" />
         <asp:ListView ID="ListaDePokemones" runat="server">
-            
-            
             <ItemTemplate>
                 <tr class="row-data">
                     <td>

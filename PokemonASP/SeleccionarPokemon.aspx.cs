@@ -27,6 +27,7 @@ namespace PokemonASP
             catch (Exception ex)
             {
                 myLabel.Text = "Error. Se esperaba ?entrenadorId=X en la URL";
+                return;
             }
 
             if (idxEntrenador == 1)
@@ -36,7 +37,9 @@ namespace PokemonASP
             else if (idxEntrenador == 2)
             {
                 Entrenador = BaseDeDatos.Entrenador2;
+
             }
+            lblEntrenador.Text = $"Elegir pokemones de: {Entrenador.getNombre()}";
 
             if (!IsPostBack)
             {                
