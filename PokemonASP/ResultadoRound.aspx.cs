@@ -81,7 +81,7 @@ namespace PokemonASP
             nombrePokemon2.Text = $"{poke2.Nombre} de {e2.getNombre()}";
             ataqueBase2.Text = poke2.AtaqueBase.ToString();
             nivel2.Text = poke2.Nivel.ToString();
-            vida2.Text = $"{poke2.VidaActual}/{poke1.VidaTotal()}";
+            vida2.Text = $"{poke2.VidaActual}/{poke2.VidaTotal()}";
             imagen2.ImageUrl = poke2.ImageURL;
             if (poke2.VidaActual == 0)
             {
