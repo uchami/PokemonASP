@@ -10,6 +10,7 @@ namespace PokemonASP.Models
     {
         agua,
         fuego,
-        tierra
+        tierra,
+        electricidad
     }
 }

@@ -19,14 +19,15 @@ namespace PokemonASP
         {
             e1 = BaseDeDatos.Entrenador1;
             e2 = BaseDeDatos.Entrenador2;
-            
-            if(e1 == null || e2 == null) { return; }
-            if(e1.GetPokemonElegido() == null || e2.GetPokemonElegido()==null) { return; }
+
+            if (e1 == null || e2 == null) { return; }
+            if (e1.GetPokemonElegido() == null || e2.GetPokemonElegido() == null) { return; }
             poke1 = e1.GetPokemonElegido();
             poke2 = e2.GetPokemonElegido();
-            LoadPokemonData();
-
-
+            if (!IsPostBack)
+            {
+                LoadPokemonData();
+            }
         }
         public void LucharRound(object sender, EventArgs e)
         {   

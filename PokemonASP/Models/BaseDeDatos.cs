@@ -10,6 +10,8 @@ namespace PokemonASP.Models
         public static Entrenador Entrenador1;
         public static Entrenador Entrenador2;
 
+        public static List<Pokemon> Pokemones = new List<Pokemon>();
+
         private static bool fuePrecargada = false;
         public static bool FuePrecargada()
         {

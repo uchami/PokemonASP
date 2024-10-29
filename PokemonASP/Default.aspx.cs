@@ -13,7 +13,10 @@ namespace PokemonASP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BaseDeDatos.PreCargarDB();
+            if (!IsPostBack)
+            {
+                BaseDeDatos.PreCargarDB();
+            }
         }
         public void NavegarASelecccionDePokemon(object sender, EventArgs e)
         {
